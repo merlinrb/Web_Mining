@@ -6,7 +6,7 @@ from bs4 import BeautifulSoup
 from multiprocessing.dummy import Pool
 
 def is_existing(book_id):
-    response = requests.get('http://taebc.ebook.hyread.com.tw/bookDetail.jsp?id=' + book_id)
+    response = requests.get('http://taebc.ebook.hyread.com.tw/bookDetail.jsp?id=' + 186140)
     if '未購買此電子書' in response.text:
         return False
     else:
